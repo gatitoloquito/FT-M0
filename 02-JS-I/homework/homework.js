@@ -70,10 +70,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-   if ( str1.lenght === str2.lenght ) {
-     return true;
-   }
-  return false;
+ return str1.length === str2.length;
 }
 
 function menosQueNoventa(num) {
@@ -242,20 +239,22 @@ function esVocal(letra){
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
-  if ( letra.lenght > 1) {
-    return "esto solo funciona con una letra";
+  if (letra === "a") return "Es vocal"
+  else if(letra === "e") return "Es vocal";
+  else if(letra === "i") return "Es vocal";
+  else if(letra === "o") return "Es vocal";
+  else if(letra === "u") return "Es vocal";
+  if ( letra.length > 1) {
+    return "Dato incorrecto";
   }
   if (letra === 0) {
-    return "te pedí una letra, no un numero";
+    return "Dato incorrecto";
   }
   if (letra < 0) {
-    return "te pedí una letra, no un numero";
+    return "Dato incorrecto";
   }
   if (letra > 0 ) {
-    return "te pedí una letra, no un numero";
-  }
-  if (letra === a) {
-    
+    return "Dato incorrecto";
   }
 }
 
